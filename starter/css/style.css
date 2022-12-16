@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --dark: black;
+  --title-background: green;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -21,3 +26,65 @@ h6 {
 p {
   margin: 0;
 }
+
+/* Header style */
+
+header {
+  display: flex;
+  background-color: var(--dark);
+  padding:10px 0px;
+}
+
+h1 {
+  background-color: var(--title-background);
+  color:  var(--dark);
+  height: 80%;
+  padding: 5px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: var(--title-background);
+  right: 0px;
+}
+
+nav ul {
+  position: absolute;
+  right: 0px;
+  padding: 0px 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 5px;
+  border-bottom: 2px solid var(--title-background);
+}
+
+a:link {
+  text-decoration:none;
+  color: var(--title-background);
+}
+
+a:visited {
+  color: var(--title-background);
+}
+
+/* Banner style */
+
+.hero-banner {
+  background-image: url("../images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 70px;
+  display: flex;  
+}
+
+.hero-banner div h2 {
+  position: absolute;
+  right: 0px;
+  background-color: var(--title-background);
+}
+
+
