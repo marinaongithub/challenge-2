@@ -150,6 +150,11 @@ main h2 {
 
 /* Work section */
 
+#work a:visited {
+  color: var(--dark);
+
+}
+
 .projects-flex {
   display: flex; 
   flex-grow: 1;
@@ -167,7 +172,6 @@ main h2 {
 
 .project-tile:hover { 
   opacity: 1.0;
-  cursor:pointer;
 }
 
 
