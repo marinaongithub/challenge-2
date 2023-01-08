@@ -45,6 +45,13 @@ h1 {
   color:  var(--dark);
   font-size: 35px;
 }
+
+img {
+  position: relative;
+  top: 3px;
+  height: 62px;
+  width: 78px;
+}
 /* 
 nav {
   display: flex;
@@ -210,7 +217,6 @@ main h2 {
 }
 
 .page-section-contact ul {
-
   padding: 0;
   margin: auto;
 }
@@ -218,12 +224,12 @@ main h2 {
 .page-section-contact ul li {
   color: var(--dark);
   display: inline-block;
-  margin: 20px;
+  margin: 35px;
   border-bottom: 2px solid var(--dark);
 }
   
 #contact a:link {
-  text-decoration:none;
+  text-decoration: none;
   color: var(--dark);
 }
   
@@ -239,5 +245,6 @@ main h2 {
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 768px) {
+
   
 }
