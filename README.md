@@ -12,9 +12,9 @@ N/A
 
 https://marinaongithub.github.io/portfolio/
 
-    ```md
-    ![alt text](images/portfolio-screenshot.png)
-    ```
+
+![alt text](images/portfolio-screenshot.png)
+
 
 The header section contains the name and photo/avatar of the developer and a navigation bar to scroll directly to each section of the porfolio.
 -About me: developer description

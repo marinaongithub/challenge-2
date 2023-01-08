@@ -35,7 +35,6 @@ header {
   display: flex;
   background-color: var(--dark);
   padding:var(--title-padding);
-  height: 15vh;
 }
 
 h1 {
@@ -51,14 +50,6 @@ img {
   margin: auto 0;
   height: 62.5px;
 }
-/* 
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  color: var(--title-background);
-  right: 0px;
-} */
 
 nav ul {
   position: absolute;
@@ -214,15 +205,12 @@ main h2 {
 .page-section-contact {
   display: flex;
   margin: 10px;
-  /* flex-grow: 1; */
-
 }
 
 .page-section-contact ul {
   display: flex;
   justify-content: center;
   padding: 0;
-  /* margin: auto; */
   width: var(--section-width);
 }
 
