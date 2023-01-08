@@ -4,7 +4,8 @@
 
 :root {
   --dark: black;
-  --title-background: green;
+  --title-background:#4086d9;
+  ;
   --title-padding: 10px 0px;
 }
 
@@ -25,31 +26,33 @@ h6 {
 }
 
 p {
-  margin: 0;
+  margin: 0px;
 }
 
-/* Header style */
+/* HEADER */
 
 header {
   display: flex;
   background-color: var(--dark);
   padding:var(--title-padding);
+  height: 15vh;
 }
 
 h1 {
+  margin: auto 0;
+  padding: 5px;
   background-color: var(--title-background);
   color:  var(--dark);
-  height: 80%;
-  padding: 5px;
+  font-size: 35px;
 }
-
+/* 
 nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   color: var(--title-background);
   right: 0px;
-}
+} */
 
 nav ul {
   position: absolute;
@@ -63,33 +66,49 @@ nav ul li {
   border-bottom: 2px solid var(--title-background);
 }
 
-a:link {
+nav a:link {
   text-decoration:none;
   color: var(--title-background);
 }
 
-a:visited {
+nav a:visited {
   color: var(--title-background);
 }
 
-/* Banner style */
+nav a:hover {
+  color: var(--dark);
+  background-color: var(--title-background);
+}
+
+
+/* BANNER */
 
 .hero-banner {
   background-image: url("../images/banner.jpg");
   background-position: center;
   background-size: cover;
-  padding: 70px;
+  /* padding: 80px; */
+  height: 25vh;
   display: flex;  
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .hero-banner div h2 {
-  position: absolute;
-  right: 0px;
   background-color: var(--title-background);
-  padding: var(--title-padding);
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
-/* Main section style */
+/* MAIN SECTION */
+
+/* Main section general styling */
+
+main h2 {
+  text-align: right;
+}
 
 .page-wrapper {
   display: flex;
@@ -97,29 +116,38 @@ a:visited {
   margin: 10px;
 }
 
-main section h2 {
+.section-name {
   margin: 10px;
   padding: 10px;
   border-right: 2px solid;
+  width: 110px;
 }
-
 
 .page-section {
   display: flex; 
   margin: 10px;
 }
 
-#legend {
-  display: inline-block;
-  background-color: var(--title-background);
-  padding: 10px;
-  margin: 35% 0 15px 0;
+/* About section */
+
+.about-section {
+  display: flex;
 }
 
+.about-section p {
+  width: 80%;
+  text-align: justify;
+  margin: 10px 20px;
+}
+
+
+/* Work section */
+
 .projects-flex {
-  display: flex;
+  display: flex; 
   flex-grow: 1;
   flex-direction: column;
+  margin: 10px;
 }
 
 .project-tile { 
@@ -127,8 +155,20 @@ main section h2 {
   background-size: cover;
   border: 4px solid var( --title-background);
   margin: 5px;
-  display: flex;
-  align-items: flex-end;
+  opacity: 0.8;
+}
+
+.project-tile:hover { 
+  opacity: 1.0;
+  cursor:pointer;
+}
+
+
+#legend {
+  display: inline-block;
+  background-color: var(--title-background);
+  padding: 10px;
+  margin: 35% 0 15px 0;
 }
 
 #project-1 {
@@ -138,13 +178,11 @@ main section h2 {
 .project-flex-double {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
 }
 
 #project-2, #project-3, #project-4, #project-5  {
     flex: 1 1 0px;
 }
-
 
 #project-2 {
   background-image: url("../images/02-portfolio-1.jpg");
@@ -161,6 +199,45 @@ main section h2 {
 #project-5 {
   background-image: url("../images/02-run-buddy.jpg");
 }
+
+/* Contact section */
+
+.page-section-contact {
+  display: flex;
+  margin: 10px;
+  flex-grow: 1;
+
+}
+
+.page-section-contact ul {
+
+  padding: 0;
+  margin: auto;
+}
+
+.page-section-contact ul li {
+  color: var(--dark);
+  display: inline-block;
+  margin: 20px;
+  border-bottom: 2px solid var(--dark);
+}
   
+#contact a:link {
+  text-decoration:none;
+  color: var(--dark);
+}
+  
+#contact a:visited {
+  color: var(--dark);
+}
+  
+#contact a:hover {
+  color: white;
+  background-color: var(--dark);
+}  
 
+/* MEDIA QUERIES */
 
+@media only screen and (max-width: 768px) {
+  
+}
