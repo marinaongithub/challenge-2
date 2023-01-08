@@ -2,7 +2,7 @@
 
 ## Description
 
-This portfolio page was created to display development project to potential employers. It has been built html and CSS, showcasing the use of flexbox, media queries and CSS variables.
+This portfolio page was created to display development project to potential employers. It has been built using html and CSS, showcasing the use of flexbox, media queries and CSS variables.
 
 NB: currently contains placeholder links
 
